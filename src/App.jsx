@@ -1,122 +1,86 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import "./App.css";
+import { FaWhatsapp } from "react-icons/fa";
+import Header from "./components/Header";
+import Services from "./components/Services";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <div>
+      <Header />
+      <Services />
 
-      <div className="ticks"></div>
+      <section className="about" id="about">
+        <h2>About MCS</h2>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
+        <p>
+          MCS — Mirsarai Computer Service is a digital solution provider
+          offering Computer Service, Printing, Studio and Networking solutions.
+        </p>
+
+        <p>
+          Our goal is to provide reliable service, quality work and
+          customer-friendly solutions.
+        </p>
+
+        <div className="features">
+          <div>✔ Reliable Service</div>
+
+          <div>✔ Quality Work</div>
+
+          <div>✔ Customer Support</div>
         </div>
       </section>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+      <section className="contact" id="contact">
+        <h2>Contact Us</h2>
+
+        <p>
+          Get in touch with MCS for computer service, printing and digital
+          solutions.
+        </p>
+
+        <div className="contact-info">
+          <p>📞 Phone: 01XXXXXXXXX</p>
+
+          <p>💬 WhatsApp: 01XXXXXXXXX</p>
+
+          <p>✉️ Email: yourmail@example.com</p>
+
+          <p>📍 Location: Mirsarai, Chattogram</p>
+        </div>
+      </section>
+
+      <section className="gallery">
+        <h2>Our Gallery</h2>
+
+        <div className="gallery-container">
+          <div className="gallery-box">Computer Setup</div>
+
+          <div className="gallery-box">Printing Service</div>
+
+          <div className="gallery-box">Digital Studio</div>
+        </div>
+      </section>
+
+      <a
+        href="https://wa.me/8801XXXXXXXXX"
+        className="whatsapp-btn"
+        target="_blank"
+      >
+        <FaWhatsapp />
+      </a>
+
+      <footer className="footer">
+        <h3>MCS</h3>
+
+        <p>Mirsarai Computer Service</p>
+
+        <p>Computer Service | Printing | Studio | Digital Solution</p>
+
+        <p>© 2026 MCS. All Rights Reserved.</p>
+      </footer>
+    </div>
+  );
 }
 
-export default App
+export default App;
