@@ -1,9 +1,10 @@
 import "./About.css";
+import { FaShieldAlt, FaAward, FaHeadset } from "react-icons/fa";
+
 function About() {
   return (
     <section className="about" id="about">
       <div className="about-container">
-
         <h2>About MCS</h2>
 
         <p className="about-text">
@@ -19,18 +20,37 @@ function About() {
 
         <div className="features">
           <div className="feature-card">
-            ✔ Reliable Service
+            <div className="feature-icon">
+              <FaShieldAlt />
+            </div>
+
+            <h3>Reliable Service</h3>
+
+            <p>Fast, trusted and professional computer solutions.</p>
           </div>
 
           <div className="feature-card">
-            ✔ Quality Work
+            <div className="feature-icon">
+              <FaAward />
+            </div>
+
+            <h3>Quality Work</h3>
+
+            <p>
+              We focus on quality and customer satisfaction in every service.
+            </p>
           </div>
 
           <div className="feature-card">
-            ✔ Customer Support
+            <div className="feature-icon">
+              <FaHeadset />
+            </div>
+
+            <h3>Customer Support</h3>
+
+            <p>Friendly support before and after every service.</p>
           </div>
         </div>
-
       </div>
     </section>
   );
