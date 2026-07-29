@@ -15,8 +15,8 @@ function App() {
       <About />
       <Contact />
       <Gallery />
-      <WhatsAppButton />
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }
