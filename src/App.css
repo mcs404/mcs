@@ -9,20 +9,11 @@ body {
   color: #222;
 }
 
-header {
-  background: #0b5ed7;
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
-}
 
-header h1 {
-  margin: 0;
-  font-size: 36px;
-}
-
-header p {
-  font-size: 18px;
+nav,
+.hero-content {
+  position: relative;
+  z-index: 1;
 }
 
 section {
@@ -51,56 +42,16 @@ footer {
   padding: 15px;
   margin-top: 30px;
 }
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-}
 
-nav h2 {
-  margin: 0;
-  font-size: 28px;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 25px;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  cursor: pointer;
-  font-size: 16px;
-}
 
 nav ul li:hover {
   text-decoration: underline;
 }
-header button {
-  margin-top: 20px;
-  padding: 12px 25px;
-  font-size: 16px;
-  border: none;
-  border-radius: 25px;
-  background: white;
-  color: #0b5ed7;
-  cursor: pointer;
-  font-weight: bold;
+
+nav a:hover {
+  color: #4da3ff;
 }
 
-header button:hover {
-  opacity: 0.8;
-}
-.service-card {
-  transition: 0.3s;
-}
-
-.service-card:hover {
-  transform: translateY(-5px);
-}
 .about,
 .contact {
   max-width: 1000px;
@@ -147,35 +98,17 @@ header button:hover {
     gap: 10px;
     text-align: center;
   }
-
-  header h1 {
-    font-size: 28px;
-  }
-  .services-container {
-  flex-direction: column;
-}
+ 
 .features {
   flex-direction: column;
   gap: 15px;
 }
 }
 
-  section {
+section {
     padding: 15px;
   }
 
-  .service-card {
-    margin: 10px 0;
-  }
-.service-card h3 {
-  color: #0b5ed7;
-  font-size: 22px;
-}
-
-.service-card p {
-  line-height: 1.6;
-  color: #444;
-}
 .logo h2 {
   margin: 0;
   font-size: 32px;
@@ -186,26 +119,8 @@ header button:hover {
   font-size: 12px;
   display: block;
 }
-.contact-btn {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 14px 32px;
-  background: white;
-  color: #0b5ed7;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: bold;
-  font-size: 16px;
-  transition: 0.3s;
-}
 
-.contact-btn:hover {
-  transform: translateY(-3px);
-}
 
-.contact-btn:hover {
-  opacity: 0.8;
-}
 .whatsapp-btn {
   position: fixed;
   bottom: 20px;
@@ -225,75 +140,7 @@ header button:hover {
 .whatsapp-btn:hover {
   opacity: 0.8;
 }
-.services-container {
-  display: flex;
-  gap: 20px;
-}
 
-.service-card {
-  flex: 1;
-}
-.hero-content {
-  text-align: center;
-  padding: 40px 20px;
-}
-
-.hero-content h1 {
-  font-size: 60px;
-  margin-bottom: 10px;
-}
-
-.hero-content h2 {
-  font-size: 28px;
-  margin-bottom: 15px;
-}
-
-.hero-content p {
-  font-size: 18px;
-  margin: 10px 0;
-}
-.hero-content {
-  background: rgba(255,255,255,0.1);
-  border-radius: 15px;
-  margin: 20px auto;
-  max-width: 900px;
-}
-
-.hero-content h1 {
-  letter-spacing: 3px;
-}
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.logo-box {
-  width: 55px;
-  height: 55px;
-  background: white;
-  color: #0b5ed7;
-  border-radius: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 22px;
-  font-weight: bold;
-}
-
-.logo h2 {
-  margin: 0;
-  font-size: 18px;
-}
-
-.logo span {
-  font-size: 12px;
-}
-.service-card h3 {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
 .about {
   text-align: center;
   padding: 40px 20px;

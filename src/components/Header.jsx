@@ -1,6 +1,15 @@
+import "./Header.css";
+import heroImage from "../assets/images/hero.png";
+
 function Header() {
   return (
-    <header id="home">
+    <header
+      id="home"
+      style={{
+        backgroundImage: `url(${heroImage})`,
+      }}
+    >
+      <div className="hero-overlay"></div>
       <nav>
         <div className="logo">
           <div className="logo-box">MCS</div>

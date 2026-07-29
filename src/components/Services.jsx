@@ -1,4 +1,5 @@
 import { FaLaptop, FaPrint, FaCamera } from "react-icons/fa";
+import "./Services.css";
 
 function Services() {
   return (
