@@ -141,27 +141,6 @@ section {
   opacity: 0.8;
 }
 
-.about {
-  text-align: center;
-  padding: 40px 20px;
-}
-
-.about p {
-  max-width: 800px;
-  margin: 15px auto;
-  line-height: 1.6;
-}
-
-.features {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  margin-top: 25px;
-}
-
-.features div {
-  font-weight: bold;
-}
 .contact {
   text-align: center;
   padding: 40px 20px;
