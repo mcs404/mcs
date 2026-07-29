@@ -151,24 +151,3 @@ section {
 .footer p {
   margin: 8px 0;
 }
-.gallery {
-  text-align: center;
-  padding: 40px 20px;
-}
-
-.gallery-container {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-
-.gallery-box {
-  width: 250px;
-  height: 160px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #f1f1f1;
-  font-weight: bold;
-}

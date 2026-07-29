@@ -1,14 +1,45 @@
+import "./Gallery.css";
+
 function Gallery() {
   return (
-    <section className="gallery">
-      <h2>Our Gallery</h2>
-
+    <section className="gallery" id="gallery">
       <div className="gallery-container">
-        <div className="gallery-box">Computer Setup</div>
 
-        <div className="gallery-box">Printing Service</div>
+        <h2>Our Gallery</h2>
 
-        <div className="gallery-box">Digital Studio</div>
+        <p className="gallery-text">
+          A glimpse of our computer service, printing, studio, and networking
+          solutions.
+        </p>
+
+        <div className="gallery-grid">
+
+          <div className="gallery-card">
+            <div className="gallery-image">Computer Setup</div>
+          </div>
+
+          <div className="gallery-card">
+            <div className="gallery-image">Printing Service</div>
+          </div>
+
+          <div className="gallery-card">
+            <div className="gallery-image">Digital Studio</div>
+          </div>
+
+          <div className="gallery-card">
+            <div className="gallery-image">Networking</div>
+          </div>
+
+          <div className="gallery-card">
+            <div className="gallery-image">Laptop Repair</div>
+          </div>
+
+          <div className="gallery-card">
+            <div className="gallery-image">Customer Service</div>
+          </div>
+
+        </div>
+
       </div>
     </section>
   );
