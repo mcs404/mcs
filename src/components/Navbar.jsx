@@ -1,8 +1,10 @@
 import "./Navbar.css";
 import { useState, useEffect } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,7 +27,7 @@ function Navbar() {
         </div>
       </div>
 
-      <ul>
+      <ul className={menuOpen ? "nav-links active" : "nav-links"}>
         <li>
           <a href="#home">Home</a>
         </li>
@@ -46,6 +48,9 @@ function Navbar() {
           <a href="#contact">Contact</a>
         </li>
       </ul>
+      <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
+        {menuOpen ? <FaTimes /> : <FaBars />}
+      </div>
     </nav>
   );
 }
