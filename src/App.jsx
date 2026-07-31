@@ -1,4 +1,5 @@
 import "./App.css";
+import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Services from "./components/Services";
 import About from "./components/About";
@@ -10,11 +11,12 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div>
+      <Navbar />
       <Header />
       <Services />
       <About />
-      <Contact />
       <Gallery />
+      <Contact />
       <Footer />
       <WhatsAppButton />
     </div>

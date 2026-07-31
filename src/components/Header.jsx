@@ -1,40 +1,27 @@
+import { useEffect, useState } from "react";
 import "./Header.css";
 import heroImage from "../assets/images/hero.png";
 
 function Header() {
+  const [sticky, setSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setSticky(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <header
-      id="home"
-      style={{
-        backgroundImage: `url(${heroImage})`,
-      }}
+      id="home" style={{ backgroundImage: `url(${heroImage})`,}}
     >
       <div className="hero-overlay"></div>
-      <nav>
-        <div className="logo">
-          <div className="logo-box">MCS</div>
-
-          <div>
-            <h2>Mirsarai Computer Service</h2>
-            <span>Computer Service | Printing | Studio</span>
-          </div>
-        </div>
-
-        <ul>
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#services">Services</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
 
       <div className="hero-content">
         <h1>MCS</h1>

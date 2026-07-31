@@ -3,8 +3,8 @@
 ==================================== */
 
 header {
-  position: relative;
-  overflow: hidden;
+  position: sticky;
+  /*overflow: hidden;*/
 
   min-height: 35vh;
 
@@ -14,6 +14,7 @@ header {
   color: white;
   text-align: center;
   padding: 10px 20px;
+  padding-top:90px;
 
   background-size: cover;
   background-position: center;
@@ -24,43 +25,6 @@ header {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.55);
-}
-
-/* ====================================
-   NAVBAR
-==================================== */
-
-nav {
-  position: relative;
-  z-index: 2;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  margin: 20px;
-  padding: 14px 35px;
-
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(10px);
-  border-radius: 15px;
-}
-
-nav ul {
-  display: flex;
-  gap: 25px;
-  list-style: none;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-nav a:hover {
-  color: #4da3ff;
 }
 
 /* ====================================
