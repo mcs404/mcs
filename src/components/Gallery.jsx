@@ -1,45 +1,36 @@
 import "./Gallery.css";
 
+import computerService from "../assets/gallery/computer-service.jpg";
+import printingService from "../assets/gallery/printing-service.jpg";
+import studioService from "../assets/gallery/studio-service.jpg";
+import networking from "../assets/gallery/networking.jpg";
+import laptopRepair from "../assets/gallery/laptop-repair.jpg";
+import computerShop from "../assets/gallery/computer-shop.jpg";
+
 function Gallery() {
+  const galleryItems = [
+    { image: computerService, title: "Computer Service" },
+    { image: printingService, title: "Printing Service" },
+    { image: studioService, title: "Studio Service" },
+    { image: networking, title: "Networking" },
+    { image: laptopRepair, title: "Laptop Repair" },
+    { image: computerShop, title: "Our Shop" },
+  ];
+
   return (
     <section className="gallery" id="gallery">
-      <div className="gallery-container">
+      <h2>Our Gallery</h2>
 
-        <h2>Our Gallery</h2>
+      <div className="gallery-grid">
+        {galleryItems.map((item, index) => (
+          <div className="gallery-card" key={index}>
+            <img src={item.image} alt={item.title} />
 
-        <p className="gallery-text">
-          A glimpse of our computer service, printing, studio, and networking
-          solutions.
-        </p>
-
-        <div className="gallery-grid">
-
-          <div className="gallery-card">
-            <div className="gallery-image">Computer Setup</div>
+            <div className="gallery-overlay">
+              <h3>{item.title}</h3>
+            </div>
           </div>
-
-          <div className="gallery-card">
-            <div className="gallery-image">Printing Service</div>
-          </div>
-
-          <div className="gallery-card">
-            <div className="gallery-image">Digital Studio</div>
-          </div>
-
-          <div className="gallery-card">
-            <div className="gallery-image">Networking</div>
-          </div>
-
-          <div className="gallery-card">
-            <div className="gallery-image">Laptop Repair</div>
-          </div>
-
-          <div className="gallery-card">
-            <div className="gallery-image">Customer Service</div>
-          </div>
-
-        </div>
-
+        ))}
       </div>
     </section>
   );
